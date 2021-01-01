@@ -1,7 +1,7 @@
-DAY=day1
+DAY=day2
 include src/$(DAY)/makefile.title
 
-.PHONY: install test clean
+.PHONY: all clean
 
 all:
 	cd src/$(DAY) && $(MAKE)
