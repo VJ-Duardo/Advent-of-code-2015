@@ -1,7 +1,7 @@
-DAY=day5
+DAY=day6
 include src/$(DAY)/makefile.title
 
-.PHONY: all clean
+.PHONY: all clean open
 
 all:
 	cd src/$(DAY) && $(MAKE)
@@ -21,3 +21,8 @@ distclean: clean
 
 debug: install
 	gdb bin/$(TITLE)
+
+open:
+	atom src/$(DAY)/*.c
+	atom src/$(DAY)/makefile
+	atom include/$(DAY)/*.h
