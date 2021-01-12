@@ -1,4 +1,4 @@
-DAY=day7
+DAY=day8
 include src/$(DAY)/makefile.title
 
 .PHONY: all clean open
@@ -26,3 +26,4 @@ open:
 	atom src/$(DAY)/*.c
 	atom src/$(DAY)/makefile
 	atom include/$(DAY)/*.h
+	atom src/$(DAY)/*.txt
