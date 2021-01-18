@@ -1,4 +1,4 @@
-DAY=day9
+DAY=day10
 include src/$(DAY)/makefile.title
 
 .PHONY: all clean open
@@ -23,7 +23,7 @@ debug: install
 	gdb bin/$(TITLE)
 
 open:
-	atom src/$(DAY)/*.c
-	atom src/$(DAY)/makefile
-	atom include/$(DAY)/*.h
-	atom src/$(DAY)/*.txt
+	code src/$(DAY)/*.c
+	code src/$(DAY)/makefile
+	code include/$(DAY)/*.h
+	code src/$(DAY)/*.txt
