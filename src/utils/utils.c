@@ -9,8 +9,8 @@ char** getSplitArray(char* input, const char* del, int* size){
   while (s != NULL){
     (*size)++;
     result = realloc(result, *size*sizeof(char*));
-    result[c] = (char*)malloc(strlen(s)*sizeof(char));
-    result[c] = s;
+    result[c] = (char*)malloc(strlen(s)*sizeof(char)+1);
+    strcpy(result[c], s);
     c++;
     s = strtok(NULL, del);
   }
