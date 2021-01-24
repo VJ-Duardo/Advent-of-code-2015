@@ -1,4 +1,4 @@
-DAY=day17
+DAY=day18
 include src/$(DAY)/makefile.title
 
 .PHONY: all clean open
