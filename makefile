@@ -8,6 +8,7 @@ all:
 
 install: all
 	cp src/$(DAY)/$(TITLE) bin/
+	cd src/utils && $(MAKE) && cp *.so ../../lib/
 
 run: install
 	./bin/$(TITLE)
@@ -17,7 +18,7 @@ clean:
 	cd src/utils/ && rm -f *.o *.d
 
 distclean: clean
-	rm -rf bin/$(TITLE)
+	rm -rf bin/$(TITLE) lib/*
 
 debug: install
 	gdb bin/$(TITLE)

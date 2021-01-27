@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -I./../../include -Wall -std=c11 -pedantic -g
+LDFLAGS = '-Wl,-rpath,$$ORIGIN/../lib' -L./../../lib -lUtils
 SRC = $(wildcard *.c)
-SRC += ./../utils/utils.c
 OBJS = $(SRC:.c=.o)
 
 all: medicine
