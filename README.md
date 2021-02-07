@@ -1,6 +1,6 @@
 # Advent-of-code-2015
 
-Trying to learn C~~/C++~~ by doing AOC2015.
+Trying to learn C<s>/C++</s> by doing AOC2015.
 
 <br>
 
